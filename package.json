@@ -1,0 +1,18 @@
+{
+  "name": "paulmospan",
+  "version": "1.0.0",
+  "description": "My private site-portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Mospan",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}

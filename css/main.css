@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/lato/Lato-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lato {
+  font-family: Lato, sans-serif !important;
+  color: #252525 !important;
+}
+
+.roboto {
+  font-family: Roboto, sans-serif !important;
+  color: #8D8D8D !important;
+}
+
+header {
+  height: auto;
+}
+
+header .nav-li {
+  line-height: 1.66 !important;
+}
+
+main {
+  height: 82px;
+  background: green;
+}
+
+#article-skils {
+  height: 82px;
+  background: blue;
+}
+
+#article-skils h1 {
+  font-family: Lato, sans-serif;
+}
+
+#article-experience {
+  height: 82px;
+  background: yellow;
+}
+
+#article-education {
+  height: auto;
+  background: pink;
+}
+
+#article-portfolio {
+  height: 82px;
+  background: hazed;
+}
+
+#article-contact {
+  height: 82px;
+  background: aqua;
+}
+
+footer {
+  height: 50px;
+  background: orange;
+}
+
+@media screen and (min-width: 950px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #mobile-menu {
+    display: block;
+  }
+  #desktop-menu {
+    display: none;
+  }
+}
