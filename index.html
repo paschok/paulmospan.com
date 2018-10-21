@@ -2,95 +2,320 @@
 <html>
 
 <head>
-    <title>P.P.P!</title>
+    <title>Pavlo Mospan.</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
     <link rel="stylesheet" href="css/uikit.min.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-
-    <script src="js/main.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="uk-container uk-container-medium">
-            <nav class="uk-navbar" uk-navbar style="height: 82px">
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-item uk-logo lato" href="#">
-                        Paul.Pavlo.Pascha!
-                    </a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav uk-navbar-right" id="desktop-menu">
-                        <li><a href="#" class="lato nav-li"> Hallo </a></li>
-                        <li><a href="#" class="lato nav-li"> Fähigkeiten </a></li>
-                        <li><a href="#" class="lato nav-li"> Erfahrung </a></li>
-                        <li><a href="#" class="lato nav-li"> Ausbildung </a></li>
-                        <li><a href="#" class="lato nav-li"> Portfolio </a></li>
-                        <li><a href="#" class="lato nav-li"> Kontakt </a></li>
-                    </ul>
-                    <span id="mobile-menu" uk-icon="menu" uk-toggle="target: #off-canvass"></span>
-                </div>
-            
-            <div class="uk-offcanvas-content">
-                <!-- This is the off-canvas -->
-                <div id="off-canvass" uk-offcanvas>
-                    <div class="uk-offcanvas-bar">
-                        <button class="uk-offcanvas-close" type="button" uk-close></button>
-                        <ul class="uk-nav uk-nav-default uk-list uk-list-divider">
-                            <li><a href="#" class="lato nav-li"> Hallo </a></li>
-                            <li><a href="#" class="lato nav-li"> Fähigkeiten </a></li>
-                            <li><a href="#" class="lato nav-li"> Erfahrung </a></li>
-                            <li><a href="#" class="lato nav-li"> Ausbildung </a></li>
-                            <li><a href="#" class="lato nav-li"> Portfolio </a></li>
-                            <li><a href="#" class="lato nav-li"> Kontakt </a></li>
-                        </ul>
+        <div class="border-b" id="my-sticky-navbar" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <div class="uk-container uk-container-medium ">
+                <nav class="uk-navbar" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo lato" href="#">
+                            Paul<span class="blue">.</span>
+                            Pavlo<span class="blue">.</span>
+                            Pascha<span class="blue">!</span>
+                        </a>
                     </div>
-                </div>
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav uk-navbar-right" id="desktop-menu">
+                            <li><a href="#hello" class="lato nav-li"> Hallo </a></li>
+                            <li><a href="#article-skills" class="lato nav-li"> Fähigkeiten </a></li>
+                            <li><a href="#article-experience" class="lato nav-li"> Erfahrung </a></li>
+                            <li><a href="#article-education" class="lato nav-li"> Ausbildung </a></li>
+                            <li><a href="#article-portfolio" class="lato nav-li"> Portfolio </a></li>
+                            <li><a href="#article-contact" class="lato nav-li"> Kontakt </a></li>
+                        </ul>
+                        <span id="mobile-menu" uk-icon="menu" uk-toggle="target: #off-canvass"></span>
+                    </div>
+
+                    <div class="uk-offcanvas-content">
+                        <!-- This is the off-canvas -->
+                        <div id="off-canvass" uk-offcanvas>
+                            <div class="uk-offcanvas-bar">
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <ul class="uk-nav uk-list uk-list-divider">
+                                    <li><a href="#hello" class="nav-li-off"> Hallo </a></li>
+                                    <li><a href="#article-skills" class="nav-li-off"> Fähigkeiten </a></li>
+                                    <li><a href="#article-experience" class="nav-li-off"> Erfahrung </a></li>
+                                    <li><a href="#article-education" class="nav-li-off"> Ausbildung </a></li>
+                                    <li><a href="#article-portfolio" class="nav-li-off"> Portfolio </a></li>
+                                    <li><a href="#article-contact" class="nav-li-off"> Kontakt </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+
+
+
 
         </div>
     </header>
-    <main>
+
+    <main id="hello" class="border-b">
         <div class="uk-container uk-container-medium">
-            Main
+            <div class="uk-grid-match uk-child-width-expand@s uk-grid-large" uk-grid>
+                <div id="main-left" class="uk-text-left uk-width-1-2@m">
+                    <div class="article-description">
+                        <h2 class="lato">Ich bin Pavlo Mospan <span class="blue">.</span></h2>
+                        <p class="roboto">Aber kann man mir auch Paul oder Pascha nennen.Ich bin ein Webentwickler in
+                            Merseburg, Sachsen-Ahnhalt.
+                            Momentan studiere ich an der Hochschule Merseburg und in der Nationale Technische
+                            Universität
+                            der Ukraine 'KPI'
+                            Ich möchte mehr arbeiten und meine Fähigkeiten als Web Developer verbessern.
+                        </p>
+                    </div>
+                    <div class="about-me-info uk-text-left">
+                        <div uk-grid>
+                            <div class="uk-width-1-4 span-title">Phone</div>
+                            <div class="uk-width-3-4 span-info">+49 15253226341</div>
+                        </div>
+                        <div uk-grid style="margin-top:10px">
+                            <div class="uk-width-1-4 span-title">Email</div>
+                            <div class="uk-width-3-4 span-info">pavel.mospan@yahoo.com</div>
+                        </div>
+                        <div uk-grid style="margin-top:10px">
+                            <div class="uk-width-1-4 span-title">Adress</div>
+                            <div class="uk-width-3-4 span-info">Eberhard-Leibnitz-Str. 3, Merseburg, 06217
+                            </div>
+                        </div>
+                        <div uk-grid style="margin-top:10px">
+                            <div class="uk-width-1-4 span-title">Sprachen</div>
+                            <div class="uk-width-3-4 span-info">Russisch, Ukrainisch, Deutsch, English
+                            </div>
+                        </div>
+                        <div uk-grid style="margin-top:10px">
+                            <div class="uk-width-1-4 span-title">Social</div>
+                            <div class="uk-width-3-4 social-icons">
+                                <a href="https://www.facebook.com/paul.mospan" target="_blank" class="uk-icon-link"
+                                    uk-icon="facebook"></a>
+                                <a href="https://www.instagram.com/paul.mspn" target="_blank" class="uk-icon-link"
+                                    uk-icon="instagram"></a>
+                                <a href="https://www.linkedin.com/in/pavlo-mospan/" class="uk-icon-link" target="_blank"
+                                    uk-icon="linkedin"></a>
+                                <a href="https://github.com/sachsene" class="uk-icon-link" target="_blank" uk-icon="github"></a>
+                            </div>
+                        </div>
+
+                        <div uk-grid style="margin-top:10px">
+                            <div class="uk-width-2-5 span-title">
+                                <p uk-margin>
+                                    <a class="uk-button uk-button-primary my-button" href="cv/CV-Europass-20181008-Mospan-DE.pdf"
+                                        download="Pavlo_Mospan_CV" target="_blank">CV laden</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="main-right" class="uk-width-1-2@m">
+                    <div class="poster" style="background-image: url(img/Pavlo_Mospan.jpg)"></div>
+                </div>
+            </div>
         </div>
     </main>
-    <div id="article-skils">
+
+    <div id="article-skills" class="border-b">
+        <a name="skills" style="display:none"></a>
         <div class="uk-container uk-container-medium">
-            <h1>Skill</h1>
+            <div class="uk-grid-match uk-child-width-expand@s uk-grid-large" uk-grid>
+                <div class="uk-text-left uk-width-1-3@m">
+                    <div class="article-description">
+                        <h2 class="lato">Fähigkeiten <span class="blue">.</span></h2>
+                        <p class="roboto">Ich bin inspiriert von dem, was ich bin,
+                            etwas Großartiges zu bauen.
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="uk-grid-match uk-child-width-expand@s uk-grid-small" uk-grid>
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-3@s">
+                            <h4 class="lato uk-card-title">Front-End Entwicklung</h4>
+                            <h5 class="skills">HTML, CSS, SASS, Bootstrap, <br> Zurb Foundation, UIkit
+                        </div>
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-3@s">
+                            <h4 class="lato">Web Entwicklung</h4>
+                            <h5 class="skills">Angular2+, Joomla, JavaScript, PHP, Git </h5>
+
+                        </div>
+                        <div class="uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-3@s">
+                            <h4 class="lato">Weitere Erkenntnisse</h4>
+                            <h5 class="skills">Python, Java, Android, Java FX, XML</h5>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="uk-child-width-expand uk-text-center" uk-grid>
+                        <i class="fab fa-html5 icons"></i>
+                        <i class="fab fa-css3-alt icons"></i>
+                        <i class="fab fa-sass icons"></i>
+                        <i class="fab fa-uikit icons"></i>
+                        <i class="fab fa-js-square icons"></i>
+                        <i class="fab fa-angular icons"></i>
+                        <i class="fab fa-git icons"></i>
+                        <i class="fab fa-joomla icons"></i>
+                        <i class="fab fa-php icons"></i>
+                        <i class="fab fa-python icons"></i>
+                        <i class="fab fa-java icons"></i>
+                        <i class="fab fa-android icons"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="article-experience">
+
+    <div id="article-experience" class="border-b ">
         <div class="uk-container uk-container-medium">
-            Experience
+            <div class="uk-grid-match uk-child-width-expand@s uk-grid-large" uk-grid>
+                <div class="uk-text-left uk-width-1-3@m">
+                    <div class="article-description">
+                        <h2 class="lato">Erfahrung <span class="blue">.</span></h2>
+                        <p class="roboto">Ich habe wenig Erfahrung, aber ich bin zielstrebig,
+                            hartnäckig und fleißig. Ich liebe es, jeden Tag neue Dinge zu lernen.
+                            Ich mag es, Anwendungen, Websites zu erstellen, und ich versuche,
+                            jede meiner Arbeiten professionell zu machen.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="article-information">
+                        <h4 class="lato"> Front-End Entwicklung (Werkstudent)<span class="roboto">Mogic GmbH</span></h4>
+                        <h5>Januar, 2018 — July, 2018</h5>
+                        <p>Habe mit Hilfe von CSS kleine Aufgaben gemacht. Auch, war ich mit Joomla
+                            beschäftigt,
+                            so habe ich 2 Webbseiten mit dieses CMS erstellt. Am Ende meiner Arbeit hatte ich
+                            Aufgabe
+                            mich mit Angulat Bekanntschaft machen, was ich mit Vergnügen realisiert.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="article-education">
+
+    <div id="article-education" class="border-b ">
         <div class="uk-container uk-container-medium">
-            EDUCATION
+            <div class="uk-grid-match uk-child-width-expand@s uk-grid-large" uk-grid>
+                <div class="uk-text-left uk-width-1-3@m">
+                    <div class="article-description">
+                        <h2 class="lato">Ausbildung <span class="blue">.</span></h2>
+                        <p class="roboto">Mein ganzes Leben lang war ich von meiner festen Überzeugung
+                            getrieben, dass Bildung wichtig ist. Ich versuche jeden Tag etwas Neues zu lernen.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="article-information">
+                        <h4 class="lato">Studium der Computerwissenschaft (Bachelor)</h4>
+                        <h5>2014 — 2018</h5>
+                        <p>Nationale Technische Universität der Ukraine "KPI", Kiew (Ukraine)
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="article-information">
+                        <h4 class="lato">Studium der Angewandte Informatik (Bachelor)</h4>
+                        <h5>2016 — Heute</h5>
+                        <p>Hochschule Merseburg, Merseburg (Deutschland)
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="article-information">
+                        <h4 class="lato">Studium der Computerwissenschaft (Master)</h4>
+                        <h5>2018 — Heute</h5>
+                        <p>Nationale Technische Universität der Ukraine "KPI", Kiew (Ukraine)
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="article-portfolio">
+
+    <div id="article-portfolio" class="border-b">
         <div class="uk-container uk-container-medium">
-            Portfolio
+            <div class="uk-grid-match uk-child-width-expand@s" uk-grid>
+                <div class="uk-text-left">
+                    <div class="article-description">
+                        <h2 class="lato">Portfolio <span class="blue">.</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-grid-match uk-child-width-expand@m uk-grid-medium uk-text-center" uk-grid>
+                <div class="portfolio-height">
+                    <div class="poster" style="background-image: url(img/endingdays.jpeg)"></div>
+                </div>
+                <div class="portfolio-height">
+                    <div class="poster" style="background-image: url(img/faitown.jpeg)"></div>
+                </div>
+                <div class="portfolio-height">
+                    <div class="poster" style="background-image: url(img/sovereignsoftheseas.jpeg)"></div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <div id="article-contact">
+
+    <div id="article-contact" class="border-b">
         <div class="uk-container uk-container-medium">
-            Kontkt
+            <div class="uk-grid-match uk-child-width-expand@s uk-grid-large" uk-grid>
+                <div class="uk-text-left uk-width-1-3@m">
+                    <div class="article-description">
+                        <h2 class="lato">Kontaktiert mich <span class="blue">.</span></h2>
+                        <p class="roboto">Arbeiten Sie an etwas Großartigem? Ich würde gerne helfen,
+                            es zu verwirklichen! Schreiben Sie mir einen Brief und beginnen sofort mit dem Projekt!
+                            "Mach es einfach".
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="uk-grid-match uk-child-width-expand@s uk-grid-medium" uk-grid>
+                        <div class="uk-text-left uk-width-1-3@m">
+                            <form>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Name">
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Email">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-text-left uk-width-2-3@m">
+                            <form action="">
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Nachricht"></textarea></div>
+                            </form>
+                            <p class="uk-text-right" uk-margin>
+                                <a class="uk-button uk-button-primary my-button " href="cv/CV-Europass-20181008-Mospan-DE.pdf"
+                                    download="Pavlo_Mospan_CV" target="_blank">Senden</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <footer>
         <div class="uk-container uk-container-medium">
-            footer
+            <p class="uk-text-center">Copyright &copy; 2018 Pavlo Mospan</p>
         </div>
     </footer>
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
