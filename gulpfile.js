@@ -6,9 +6,15 @@ gulp.task('sass', function() { // Создаем таск "sass"
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
     .pipe(gulp.dest('css')) // Выгружаем результата в папку css
   });
+  sass.compiler = require('node-sass');
 
-gulp.task('watch', function() {
+gulp.task('sass:watcwatch', function() {
   gulp.watch(['sass/**/*.sass', 'sass/**/*.scss'], ['sass']); // Наблюдение за sass файлами в папке sass
 });
 
 gulp.task('default', ['watch']);
+
+
+ 
+
+ 

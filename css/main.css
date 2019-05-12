@@ -91,7 +91,7 @@ html {
 }
 
 .icons {
-  transition: background 2s;
+  transition: color 4s;
   font-size: 36px;
   cursor: pointer;
 }
@@ -151,6 +151,10 @@ main #main-right .poster {
   padding: 45px 0;
 }
 
+#article-skills #hr-icon {
+  margin-top: 45px;
+}
+
 #article-experience {
   height: auto;
   padding: 45px 0;
@@ -181,6 +185,18 @@ main #main-right .poster {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#article-portfolio .uk-overlay-default {
+  color: #3333FF;
+}
+
+#article-portfolio .uk-overlay-default p {
+  color: #767676;
+}
+
+#article-portfolio .uk-overlay-default p a {
+  color: #3333FF;
 }
 
 #article-contact {
